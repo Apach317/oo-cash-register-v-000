@@ -17,7 +17,7 @@ class CashRegister
       @total += price
     end
 
-    if quantity > 1
+    if quantity > 0
       items = 0
       while quantity > items
         @cart << title
