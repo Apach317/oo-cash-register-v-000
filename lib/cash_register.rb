@@ -16,7 +16,7 @@ class CashRegister
     if quantity = 0
       @total += price
     elsif quantity > 0
-      @total += price * total
+      self.total += price * total
     end
 
     quantity.times do
