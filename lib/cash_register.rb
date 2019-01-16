@@ -19,7 +19,7 @@ class CashRegister
     quantity.times do
       cart << title
     end
-    @last_trans = price * quantity
+    self.last_trans = price * quantity
   end
 
   def apply_discount
