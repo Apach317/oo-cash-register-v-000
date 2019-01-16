@@ -4,7 +4,7 @@ class CashRegister
   def initialize(discount = 0)
     @total = 0
     @discount = discount
-    @cart = []
+    @items = []
   end
 
   def total
@@ -14,7 +14,7 @@ class CashRegister
   def add_item(total, price, quantity=1)
     @total += price * quantity
     quantity.times do
-      @cart << title
+      @items << title
     end
     @last_trans = price * quantity
   end
@@ -28,9 +28,6 @@ class CashRegister
     end
   end
 
-  def items
-    @cart
-  end
 
   def void_last_transaction
 
