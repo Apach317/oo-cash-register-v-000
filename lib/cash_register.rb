@@ -31,7 +31,7 @@ class CashRegister
     #     @cart << title
     end
 
-    @last_trans += price * quantity
+    @last_trans = price * quantity
 
   end
 
