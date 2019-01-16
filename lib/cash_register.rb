@@ -8,11 +8,11 @@ class CashRegister
   end
 
   def total
-    @total
+    @total = total
   end
 
   def add_item(total, price, quantity=1)
-    @total += price * quantity
+    total += price * quantity
     quantity.times do
       @cart << title
     end
