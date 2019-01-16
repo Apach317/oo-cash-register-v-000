@@ -13,11 +13,9 @@ class CashRegister
 
   def add_item(total, price, quantity=1)
 
-
-
     if quantity = 0
       @total += price
-    else
+    elsif quantity > 0
       @total += price * total
     end
 
