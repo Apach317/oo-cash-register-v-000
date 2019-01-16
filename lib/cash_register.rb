@@ -16,7 +16,7 @@ class CashRegister
 
 
     if quantity = 0
-      @total += price 
+      @total += price
     else
       @total += price * total
     end
