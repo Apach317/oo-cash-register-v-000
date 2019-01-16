@@ -14,7 +14,7 @@ class CashRegister
   def add_item(total, price, quantity=1)
 
       self.total += price * total
-  
+
 
     quantity.times do
       cart << title
